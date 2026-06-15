@@ -3,242 +3,312 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WeCare Supplements - Premium Gym Nutrition</title>
-    <!-- Link to external CSS file -->
+    <title>RedStore | Ecommerce Website Design</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
 
-    <!-- 1. Header / Navbar -->
-    <header class="navbar">
+    <div class="header">
         <div class="container">
-            <!-- Logo -->
-            <a href="#" class="logo">WeCare Supps.</a>
+            <div class="navbar">
+                <div class="logo">
+                    <!-- Using text logo instead of image for now -->
+                    <h1 style="color: #000; font-weight: 700;">Red<span style="color: #ff523b;">Store</span></h1>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Account</a></li>
+                    </ul>
+                </nav>
+                <img src="https://img.icons8.com/material-outlined/24/000000/shopping-cart--v1.png" width="30px" height="30px" alt="Cart">
+                <img src="https://img.icons8.com/ios-filled/50/000000/menu--v1.png" class="menu-icon" onclick="menutoggle()" alt="Menu">
+            </div>
             
-            <!-- Mobile Menu Toggle (CSS-only Checkbox Trick) -->
-            <input type="checkbox" id="nav-toggle" class="nav-toggle">
-            <label for="nav-toggle" class="nav-toggle-label">
-                <span></span>
-            </label>
-
-            <!-- Navigation Links -->
-            <nav class="nav-links">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#features">Why Us</a></li>
-                    <li><a href="#products">Products</a></li>
-                    <li><a href="#testimonials">Reviews</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+            <div class="row">
+                <div class="col-2">
+                    <h1>Give Your Workout<br>A New Style!</h1>
+                    <p>Success isn't always about greatness. It's about consistency. Consistent<br>hard work gains success. Greatness will come.</p>
+                    <a href="" class="btn">Explore Now &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <!-- Placeholder for AI generated hero image -->
+                    <img src="hero_image.png" alt="Hero Background">
+                </div>
+            </div>
         </div>
-    </header>
+    </div>
 
-    <!-- 2. Hero Section -->
-    <section id="home" class="hero">
+    <!-- Featured Categories -->
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="category_1.png" alt="Category 1">
+                </div>
+                <div class="col-3">
+                    <img src="category_2.png" alt="Category 2">
+                </div>
+                <div class="col-3">
+                    <img src="category_3.png" alt="Category 3">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured Products -->
+    <div class="small-container">
+        <h2 class="title">Featured Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="product_1.png" alt="Product 1">
+                <h4>Red Printed T-Shirt</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="product_2.png" alt="Product 2">
+                <h4>Black Running Shoes</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>$75.00</p>
+            </div>
+            <div class="col-4">
+                <img src="product_3.png" alt="Product 3">
+                <h4>Gray Track Pants</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>$45.00</p>
+            </div>
+            <div class="col-4">
+                <img src="product_4.png" alt="Product 4">
+                <h4>Blue Puma T-Shirt</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>$55.00</p>
+            </div>
+        </div>
+
+        <!-- Latest Products -->
+        <h2 class="title">Latest Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="product_5.png" alt="Product">
+                <h4>White Sneakers</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>$95.00</p>
+            </div>
+            <div class="col-4">
+                <img src="product_6.png" alt="Product">
+                <h4>Black Puma T-Shirt</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>$40.00</p>
+            </div>
+            <div class="col-4">
+                <img src="product_7.png" alt="Product">
+                <h4>Sports Socks</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>$15.00</p>
+            </div>
+            <div class="col-4">
+                <img src="product_8.png" alt="Product">
+                <h4>Fossil Watch</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>$120.00</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Offer -->
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="exclusive.png" class="offer-img" alt="Exclusive Offer">
+                </div>
+                <div class="col-2">
+                    <p>Exclusively Available on RedStore</p>
+                    <h1>Smart Band 4</h1>
+                    <small>The Mi Smart Band 4 features a 39.9% larger (than Mi Band 3) AMOLED color full-touch display with adjustable brightness, so everything is clear as can be.</small>
+                    <br>
+                    <a href="" class="btn">Buy Now &#8594;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonial -->
+    <div class="testimonial">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <i class="fas fa-quote-left"></i>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <img src="user-1.png" alt="User">
+                    <h3>Sean Parker</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fas fa-quote-left"></i>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <img src="user-2.png" alt="User">
+                    <h3>Mike Smith</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fas fa-quote-left"></i>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <img src="user-3.png" alt="User">
+                    <h3>Mabel Joe</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Brands -->
+    <div class="brands">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-5">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Godrej_Logo.svg" alt="Godrej">
+                </div>
+                <div class="col-5">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Logo_NIKE.svg" alt="Nike">
+                </div>
+                <div class="col-5">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/PayPal_Logo_Icon_2014.svg" alt="Paypal">
+                </div>
+                <div class="col-5">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Adidas_Logo.svg" alt="Adidas">
+                </div>
+                <div class="col-5">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Coca-Cola_logo.svg" alt="Coca Cola">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
         <div class="container">
-            <!-- Hero Text -->
-            <div class="hero-content">
-                <h1>Fuel Your Ultimate Performance</h1>
-                <p>High-quality protein powders, pre-workouts, and recovery supplements to help you crush your fitness goals. Lab-tested and athlete-approved.</p>
-                <a href="#products" class="btn btn-primary">Shop Supplements</a>
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Play Store">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="App Store">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <h2 style="color: #fff;">Red<span style="color: #ff523b;">Store</span></h2>
+                    <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
             </div>
-            <!-- Hero Image -->
-            <div class="hero-image">
-                <img src="https://placehold.co/600x400/ea580c/ffffff?text=Premium+Whey+Protein" alt="Whey Protein Illustration">
-            </div>
+            <hr>
+            <p class="copyright">Copyright 2026 - RedStore</p>
         </div>
-    </section>
+    </div>
 
-    <!-- 3. About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <!-- About Image -->
-            <div class="about-image">
-                <img src="https://placehold.co/500x500/10b981/ffffff?text=Gym+Athlete" alt="Athlete Working Out">
-            </div>
-            <!-- About Text -->
-            <div class="about-text">
-                <h2>About WeCare Supplements</h2>
-                <p>We believe that your body deserves the best fuel. WeCare Supplements is dedicated to providing high-quality, scientifically backed gym supplements without the proprietary blends or hidden fillers.</p>
-                <p>Whether you're looking to build muscle, lose weight, or increase endurance, our carefully formulated products are here to support every step of your fitness journey.</p>
-                <a href="#features" class="btn btn-secondary">Learn More</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- 4. Features Section (formerly Services) -->
-    <section id="features" class="services bg-light">
-        <div class="container">
-            <div class="section-title">
-                <h2>Why Choose Us?</h2>
-                <p>The WeCare Supplements Difference</p>
-            </div>
-            <!-- CSS Grid Container -->
-            <div class="grid services-grid">
-                <!-- Feature Card 1 -->
-                <div class="card service-card">
-                    <div class="icon">🔬</div>
-                    <h3>Lab Tested</h3>
-                    <p>Every batch of our protein and supplements is rigorously third-party tested for purity and safety.</p>
-                </div>
-                <!-- Feature Card 2 -->
-                <div class="card service-card">
-                    <div class="icon">💪</div>
-                    <h3>Premium Ingredients</h3>
-                    <p>No fillers or artificial junk. Just pure, effective ingredients designed to maximize your gains.</p>
-                </div>
-                <!-- Feature Card 3 -->
-                <div class="card service-card">
-                    <div class="icon">🚚</div>
-                    <h3>Fast Shipping</h3>
-                    <p>Get your supplements delivered lightning fast so you never have to miss a workout or a shake.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 5. Products Section (formerly Portfolio) -->
-    <section id="products" class="portfolio">
-        <div class="container">
-            <div class="section-title">
-                <h2>Our Top Products</h2>
-                <p>Everything you need for muscle growth and recovery</p>
-            </div>
-            <!-- CSS Grid Container -->
-            <div class="grid portfolio-grid">
-                <!-- Product Item 1 -->
-                <div class="portfolio-item">
-                    <img src="https://placehold.co/400x300/1f2937/ffffff?text=Whey+Isolate" alt="Whey Protein Isolate">
-                    <div class="portfolio-overlay">
-                        <h3>100% Whey Isolate</h3>
-                    </div>
-                </div>
-                <!-- Product Item 2 -->
-                <div class="portfolio-item">
-                    <img src="https://placehold.co/400x300/1f2937/ffffff?text=Pre-Workout" alt="Explosive Pre-Workout">
-                    <div class="portfolio-overlay">
-                        <h3>Explosive Pre-Workout</h3>
-                    </div>
-                </div>
-                <!-- Product Item 3 -->
-                <div class="portfolio-item">
-                    <img src="https://placehold.co/400x300/1f2937/ffffff?text=Creatine+Monohydrate" alt="Creatine Monohydrate">
-                    <div class="portfolio-overlay">
-                        <h3>Creatine Monohydrate</h3>
-                    </div>
-                </div>
-                <!-- Product Item 4 -->
-                <div class="portfolio-item">
-                    <img src="https://placehold.co/400x300/1f2937/ffffff?text=BCAA+Recovery" alt="BCAA Recovery">
-                    <div class="portfolio-overlay">
-                        <h3>BCAA Recovery Fuel</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 6. Testimonials Section -->
-    <section id="testimonials" class="testimonials bg-light">
-        <div class="container">
-            <div class="section-title">
-                <h2>Athlete Reviews</h2>
-                <p>What our community is saying</p>
-            </div>
-            <!-- CSS Grid Container -->
-            <div class="grid testimonials-grid">
-                <!-- Testimonial 1 -->
-                <div class="card testimonial-card">
-                    <p class="quote">"The whey isolate mixes perfectly and tastes amazing. I've noticed a significant improvement in my recovery time since I switched to WeCare."</p>
-                    <div class="client-info">
-                        <h4>Mike T.</h4>
-                        <span>Powerlifter</span>
-                    </div>
-                </div>
-                <!-- Testimonial 2 -->
-                <div class="card testimonial-card">
-                    <p class="quote">"Finally, a pre-workout that gives me clean energy without the harsh crash. The pumps are insane!"</p>
-                    <div class="client-info">
-                        <h4>Sarah L.</h4>
-                        <span>CrossFit Competitor</span>
-                    </div>
-                </div>
-                <!-- Testimonial 3 -->
-                <div class="card testimonial-card">
-                    <p class="quote">"Affordable, transparent labels, and high-quality ingredients. WeCare Supplements is my go-to brand for creatine and aminos."</p>
-                    <div class="client-info">
-                        <h4>David R.</h4>
-                        <span>Bodybuilder</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 7. Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-title">
-                <h2>Contact Us</h2>
-                <p>Have questions about our products or need fitness advice?</p>
-            </div>
-            <!-- Contact Form -->
-            <div class="contact-form-container">
-                <form class="contact-form">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" rows="5" placeholder="How can we help your fitness journey?" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- 8. Footer -->
-    <footer class="footer">
-        <div class="container footer-container">
-            <!-- Brand Info -->
-            <div class="footer-col">
-                <h3>WeCare Supps.</h3>
-                <p>Fueling champions and everyday athletes.</p>
-            </div>
-            <!-- Quick Links -->
-            <div class="footer-col">
-                <h4>Shop</h4>
-                <ul>
-                    <li><a href="#products">Protein</a></li>
-                    <li><a href="#products">Pre-Workout</a></li>
-                    <li><a href="#products">Vitamins</a></li>
-                    <li><a href="#products">Apparel</a></li>
-                </ul>
-            </div>
-            <!-- Social Media -->
-            <div class="footer-col">
-                <h4>Follow Us</h4>
-                <div class="social-links">
-                    <a href="#">Fb</a>
-                    <a href="#">Ig</a>
-                    <a href="#">Tw</a>
-                    <a href="#">Yt</a>
-                </div>
-            </div>
-        </div>
-        <!-- Copyright -->
-        <div class="footer-bottom">
-            <p>&copy; 2026 WeCare Supplements. All rights reserved.</p>
-        </div>
-    </footer>
-
+    <!-- JS for menu toggle -->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
 </body>
 </html>
