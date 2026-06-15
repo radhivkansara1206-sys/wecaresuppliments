@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Responsive Website</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. Header / Navbar -->
+    <header class="navbar">
+        <div class="container">
+            <!-- Logo -->
+            <a href="#" class="logo">Brand.</a>
+            
+            <!-- Mobile Menu Toggle (CSS-only Checkbox Trick) -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
+
+            <!-- Navigation Links -->
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 2. Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <!-- Hero Text -->
+            <div class="hero-content">
+                <h1>Build Your Dream Digital Presence</h1>
+                <p>We create stunning, high-performance websites that elevate your brand and drive results. Start your journey with us today.</p>
+                <a href="#contact" class="btn btn-primary">Get Started</a>
+            </div>
+            <!-- Hero Image -->
+            <div class="hero-image">
+                <img src="https://placehold.co/600x400/3b82f6/ffffff?text=Hero+Image" alt="Hero Illustration">
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <!-- About Image -->
+            <div class="about-image">
+                <img src="https://placehold.co/500x500/10b981/ffffff?text=About+Us" alt="About Us">
+            </div>
+            <!-- About Text -->
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p>We are a passionate team of designers and developers dedicated to crafting exceptional digital experiences. With a focus on modern aesthetics and clean code, we bring your vision to life.</p>
+                <p>Our goal is to help businesses grow by building products that are user-friendly, responsive, and beautiful.</p>
+                <a href="#services" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Services Section -->
+    <section id="services" class="services bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <p>What we can do for you</p>
+            </div>
+            <!-- CSS Grid Container -->
+            <div class="grid services-grid">
+                <!-- Service Card 1 -->
+                <div class="card service-card">
+                    <div class="icon">🎨</div>
+                    <h3>Web Design</h3>
+                    <p>Beautiful, responsive, and user-centric designs tailored to your unique brand identity.</p>
+                </div>
+                <!-- Service Card 2 -->
+                <div class="card service-card">
+                    <div class="icon">💻</div>
+                    <h3>Web Development</h3>
+                    <p>Clean, semantic, and highly optimized code built for scalability and maximum performance.</p>
+                </div>
+                <!-- Service Card 3 -->
+                <div class="card service-card">
+                    <div class="icon">📱</div>
+                    <h3>Mobile Apps</h3>
+                    <p>Seamless cross-platform applications that deliver an intuitive and fast user experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Portfolio / Gallery Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Portfolio</h2>
+                <p>A showcase of our recent work</p>
+            </div>
+            <!-- CSS Grid Container -->
+            <div class="grid portfolio-grid">
+                <!-- Portfolio Item 1 -->
+                <div class="portfolio-item">
+                    <img src="https://placehold.co/400x300/8b5cf6/ffffff?text=Project+1" alt="Project 1">
+                    <div class="portfolio-overlay">
+                        <h3>Project One</h3>
+                    </div>
+                </div>
+                <!-- Portfolio Item 2 -->
+                <div class="portfolio-item">
+                    <img src="https://placehold.co/400x300/ec4899/ffffff?text=Project+2" alt="Project 2">
+                    <div class="portfolio-overlay">
+                        <h3>Project Two</h3>
+                    </div>
+                </div>
+                <!-- Portfolio Item 3 -->
+                <div class="portfolio-item">
+                    <img src="https://placehold.co/400x300/f59e0b/ffffff?text=Project+3" alt="Project 3">
+                    <div class="portfolio-overlay">
+                        <h3>Project Three</h3>
+                    </div>
+                </div>
+                <!-- Portfolio Item 4 -->
+                <div class="portfolio-item">
+                    <img src="https://placehold.co/400x300/14b8a6/ffffff?text=Project+4" alt="Project 4">
+                    <div class="portfolio-overlay">
+                        <h3>Project Four</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Testimonials Section -->
+    <section id="testimonials" class="testimonials bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Client Testimonials</h2>
+                <p>What our clients say about us</p>
+            </div>
+            <!-- CSS Grid Container -->
+            <div class="grid testimonials-grid">
+                <!-- Testimonial 1 -->
+                <div class="card testimonial-card">
+                    <p class="quote">"Absolutely fantastic work! The team was highly professional and delivered a website that exceeded our expectations."</p>
+                    <div class="client-info">
+                        <h4>Jane Doe</h4>
+                        <span>CEO, TechCorp</span>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="card testimonial-card">
+                    <p class="quote">"Their attention to detail and modern design approach completely transformed our online presence and boosted sales."</p>
+                    <div class="client-info">
+                        <h4>John Smith</h4>
+                        <span>Founder, StartupX</span>
+                    </div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="card testimonial-card">
+                    <p class="quote">"I highly recommend them. Fast, reliable, and incredibly talented developers. A pleasure to work with from start to finish."</p>
+                    <div class="client-info">
+                        <h4>Sarah Lee</h4>
+                        <span>Marketing Director</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+                <p>We'd love to hear from you</p>
+            </div>
+            <!-- Contact Form -->
+            <div class="contact-form-container">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <!-- Brand Info -->
+            <div class="footer-col">
+                <h3>Brand.</h3>
+                <p>Creating digital excellence since 2024.</p>
+            </div>
+            <!-- Quick Links -->
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                </ul>
+            </div>
+            <!-- Social Media -->
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#">Fb</a>
+                    <a href="#">Tw</a>
+                    <a href="#">In</a>
+                    <a href="#">Li</a>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 Brand. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
