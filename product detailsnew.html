@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - RedStore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="product-details.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <h1 style="color: #000; font-weight: 700;">Red<span style="color: #ff523b;">Store</span></h1>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#products">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Account</a></li>
+                </ul>
+            </nav>
+            <img src="https://img.icons8.com/material-outlined/24/000000/shopping-cart--v1.png" width="30px" height="30px" alt="Cart">
+            <img src="https://img.icons8.com/ios-filled/50/000000/menu--v1.png" class="menu-icon" onclick="menutoggle()" alt="Menu">
+        </div>
+    </div>
+
+    <!-- Single Product Details -->
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/product_1.png" width="100%" id="ProductImg" alt="Product">
+                
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="images/product_1.png" width="100%" class="small-img" alt="Gallery">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/product_2.png" width="100%" class="small-img" alt="Gallery">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/product_3.png" width="100%" class="small-img" alt="Gallery">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/product_4.png" width="100%" class="small-img" alt="Gallery">
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-2">
+                <p id="ProductCategoryBreadcrumb">Home / T-Shirt</p>
+                <h1 id="ProductTitle">Red Printed T-Shirt by HRX</h1>
+                <h4 id="ProductPrice">$50.00</h4>
+                <select>
+                    <option>Select Size</option>
+                    <option>XXL</option>
+                    <option>XL</option>
+                    <option>Large</option>
+                    <option>Medium</option>
+                    <option>Small</option>
+                </select>
+                <input type="number" value="1">
+                <a href="" class="btn">Add To Cart</a>
+                
+                <h3>Product Details <i class="fas fa-indent"></i></h3>
+                <br>
+                <p id="ProductDescription">Give your summer wardrobe a style upgrade with the HRX Men's Active T-Shirt. Team it with a pair of shorts for your morning workout or a denims for an evening out with the guys.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Title for Related Products -->
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Related Products</h2>
+            <p>View More</p>
+        </div>
+    </div>
+
+    <!-- Related Products -->
+    <div class="small-container">
+        <div class="row">
+            <div class="col-4">
+                <a href="product-details.html?id=5">
+                    <img src="images/product_5.png" alt="Product">
+                    <h4>White Sneakers</h4>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p>$95.00</p>
+                </a>
+            </div>
+            <div class="col-4">
+                <a href="product-details.html?id=6">
+                    <img src="images/product_6.png" alt="Product">
+                    <h4>Black Puma T-Shirt</h4>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p>$40.00</p>
+                </a>
+            </div>
+            <div class="col-4">
+                <a href="product-details.html?id=7">
+                    <img src="images/product_7.png" alt="Product">
+                    <h4>Sports Socks</h4>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>$15.00</p>
+                </a>
+            </div>
+            <div class="col-4">
+                <a href="product-details.html?id=8">
+                    <img src="images/product_8.png" alt="Product">
+                    <h4>Fossil Watch</h4>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p>$120.00</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                </div>
+                <div class="footer-col-2">
+                    <h2 style="color: #fff;">Red<span style="color: #ff523b;">Store</span></h2>
+                    <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2026 - RedStore</p>
+        </div>
+    </div>
+
+    <!-- JS for menu toggle -->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+    <!-- JS for product gallery and dynamic loading -->
+    <script>
+        const products = {
+            "1": {
+                name: "Red Printed T-Shirt by HRX",
+                price: "$50.00",
+                category: "T-Shirt",
+                image: "images/product_1.png",
+                images: ["images/product_1.png", "images/product_2.png", "images/product_3.png", "images/product_4.png"],
+                description: "Give your summer wardrobe a style upgrade with the HRX Men's Active T-Shirt. Team it with a pair of shorts for your morning workout or a denims for an evening out with the guys."
+            },
+            "2": {
+                name: "Black Running Shoes by Nike",
+                price: "$75.00",
+                category: "Shoes",
+                image: "images/product_2.png",
+                images: ["images/product_2.png", "images/product_5.png", "images/product_7.png", "images/product_2.png"],
+                description: "Experience ultimate comfort and speed with the Black Running Shoes by Nike. Featuring responsive cushioning and breathable mesh upper for peak performance during your runs."
+            },
+            "3": {
+                name: "Gray Track Pants by Adidas",
+                price: "$45.00",
+                category: "Activewear",
+                image: "images/product_3.png",
+                images: ["images/product_3.png", "images/product_3.png", "images/product_3.png", "images/product_3.png"],
+                description: "Stay comfortable during workouts or lounge days with these Gray Track Pants from Adidas. Made with soft, moisture-wicking fabric and an adjustable waistband for the perfect fit."
+            },
+            "4": {
+                name: "Blue Puma T-Shirt",
+                price: "$55.00",
+                category: "T-Shirt",
+                image: "images/product_4.png",
+                images: ["images/product_4.png", "images/product_1.png", "images/product_6.png", "images/product_4.png"],
+                description: "Upgrade your sportswear collection with the classic Blue Puma T-Shirt. Crafted with premium cotton for all-day breathability and style."
+            },
+            "5": {
+                name: "Classic White Sneakers",
+                price: "$95.00",
+                category: "Shoes",
+                image: "images/product_5.png",
+                images: ["images/product_5.png", "images/product_2.png", "images/product_5.png", "images/product_2.png"],
+                description: "Add a touch of timeless style to your footwear collection with these Classic White Sneakers. Designed for casual comfort, durability, and a clean minimalist aesthetic."
+            },
+            "6": {
+                name: "Black Puma T-Shirt",
+                price: "$40.00",
+                category: "T-Shirt",
+                image: "images/product_6.png",
+                images: ["images/product_6.png", "images/product_4.png", "images/product_1.png", "images/product_6.png"],
+                description: "A sleek black option for your daily rotation, this Black Puma T-Shirt offers unmatched comfort, durability, and a clean sporty look."
+            },
+            "7": {
+                name: "Nike Cushion Sports Socks (3 Pairs)",
+                price: "$15.00",
+                category: "Accessories",
+                image: "images/product_7.png",
+                images: ["images/product_7.png", "images/product_7.png", "images/product_7.png", "images/product_7.png"],
+                description: "Keep your feet dry and cushioned with the Nike Sports Socks. Designed with sweat-wicking technology and extra support in high-wear areas."
+            },
+            "8": {
+                name: "Fossil Chronograph Men's Watch",
+                price: "$120.00",
+                category: "Watches",
+                image: "images/product_8.png",
+                images: ["images/product_8.png", "images/product_8.png", "images/product_8.png", "images/product_8.png"],
+                description: "Enhance your everyday style with the Fossil Chronograph Watch. Features a durable leather strap, stainless steel casing, and water resistance up to 50 meters."
+            }
+        };
+
+        // Parse URL parameters to fetch dynamic product details
+        const urlParams = new URLSearchParams(window.location.search);
+        const productId = urlParams.get('id') || '1';
+        const product = products[productId] || products['1'];
+
+        // Populate elements
+        document.getElementById("ProductCategoryBreadcrumb").innerText = "Home / " + product.category;
+        document.getElementById("ProductTitle").innerText = product.name;
+        document.getElementById("ProductPrice").innerText = product.price;
+        document.getElementById("ProductDescription").innerText = product.description;
+
+        var ProductImg = document.getElementById("ProductImg");
+        ProductImg.src = product.image;
+
+        var SmallImg = document.getElementsByClassName("small-img");
+        for (let i = 0; i < SmallImg.length; i++) {
+            if (product.images[i]) {
+                SmallImg[i].src = product.images[i];
+                SmallImg[i].style.display = "block";
+                
+                // Add click handler to swap gallery images
+                SmallImg[i].onclick = function() {
+                    ProductImg.src = this.src;
+                }
+            } else {
+                SmallImg[i].parentElement.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
