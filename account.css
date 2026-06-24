@@ -1,0 +1,117 @@
+/* account.css */
+.account-page {
+    padding: 50px 0;
+    background: radial-gradient(#fff, #ffd6d6);
+    min-height: calc(100vh - 400px);
+}
+.form-container {
+    background: #fff;
+    width: 350px;
+    height: 420px;
+    position: relative;
+    text-align: center;
+    padding: 30px 0;
+    margin: auto;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    overflow: hidden;
+    border-radius: 10px;
+}
+.form-btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+.form-container .tab-label {
+    font-weight: 600;
+    font-size: 18px;
+    color: #555;
+    cursor: pointer;
+    width: 80px;
+    display: inline-block;
+    transition: color 0.3s;
+}
+.indicator-wrapper {
+    position: absolute;
+    bottom: -10px;
+    width: 190px; /* 80 + 30 + 80 */
+    left: 50%;
+    transform: translateX(-50%);
+}
+#Indicator {
+    width: 80px;
+    border: none;
+    background: #ff523b;
+    height: 3px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease;
+}
+.form-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.account-form {
+    min-width: 100%;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.account-form input {
+    width: 100%;
+    height: 45px;
+    margin: 10px 0;
+    padding: 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    transition: border-color 0.3s;
+}
+.account-form input:focus {
+    outline: none;
+    border-color: #ff523b;
+}
+.account-form .btn {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 15px 0;
+    font-size: 16px;
+}
+.account-form a {
+    font-size: 13px;
+    color: #555;
+    transition: color 0.3s;
+    margin-top: 10px;
+}
+.account-form a:hover {
+    color: #ff523b;
+}
+
+/* CSS Toggling */
+#login-radio:checked ~ .form-wrapper {
+    transform: translateX(0);
+}
+#reg-radio:checked ~ .form-wrapper {
+    transform: translateX(-100%);
+}
+
+#login-radio:checked ~ .form-btn .indicator-wrapper #Indicator {
+    transform: translateX(0);
+}
+#reg-radio:checked ~ .form-btn .indicator-wrapper #Indicator {
+    transform: translateX(110px); /* 80 width + 30 gap */
+}
+#login-radio:checked ~ .form-btn label[for="login-radio"] {
+    color: #ff523b;
+}
+#reg-radio:checked ~ .form-btn label[for="reg-radio"] {
+    color: #ff523b;
+}
